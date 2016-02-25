@@ -1,0 +1,121 @@
+/* ==========================================================================
+   BASIC & SYSTEM
+   ========================================================================== */
+   .clear {
+    clear: both;
+   }
+   .wrapper {
+    margin: 0 auto;
+   }
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+header {
+  background-color: #414550;
+  width: 100%;
+  font-family: "ubuntu-condensed";
+}
+.header-top {
+  color: #C0C0C0;
+  text-align: center;
+  border-bottom: 1px solid #C0C0C0;
+  margin-bottom: 20px;
+}
+.header-bottom {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+  /* mobile
+    ========================================================================== */
+  
+  /* basic & system */
+  .wrapper {
+    padding: 0 4%;
+  }
+  .desktop {
+    display: none;
+  }
+  /* header */
+  header {
+    border-bottom: 3px solid #C0C0C0;
+  }
+  .header-top {
+    padding: 10px 0;
+    font-size: 15px;
+  }
+  /* curency & temperature */
+  .temperature {
+    color: #50ABFF;
+  }
+  .curency-up,
+  .curency-down {
+    position: relative;
+    padding-left: 11px;
+    padding-right: 5px;
+  }
+  .curency-up {
+    color: #65C852;
+  }
+  .curency-down {
+    color: #EF3D31;
+  }
+  .curency-up:before,
+  .curency-down:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    border: 4px solid transparent;
+  }
+  .curency-up:before {
+    top: 2px;
+    border-bottom: 4px solid #65C852;
+
+  }
+  .curency-down:before {
+    top: 8px;
+    border-top:4px solid #EF3D31;
+  }
+  .header-bottom {
+    padding-bottom: 10px;
+  }
+  .search,
+  .menu-btn {
+    width: 8.695652173913043%;
+  }
+  .search {
+    float: left;
+  }
+  .menu-btn {
+    float: right;
+    padding-top: 4px;
+  }
+  .logo {
+    width: 35.50724637681159%;
+    display: block;
+    margin: 0 auto;
+  }
+  .search img,
+  .logo img,
+  .menu-btn img {
+    width: 100%;
+  }
+
+
+  /*   ------------- I-Phone 4 ------------           */
+  @media screen and (max-width: 340px) {
+    /* header curency*/
+    .header-top {
+      font-size: 13px;
+    }
+    .curency-up:before {
+      top: 1px;
+    }
+    .curency-down:before {
+      top: 6px;
+    }
+  }      
