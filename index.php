@@ -37,7 +37,7 @@
         </a>
         <a class="logo" href="/">
         <!-- TODO Сделать логотип в векторе -->
-          <img src="images/logo.png" alt="ИА 'Новый День'">
+          <img src="images/logo.svg" alt="ИА 'Новый День'">
         </a>
       </div>
     </div>

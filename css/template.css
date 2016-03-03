@@ -21,6 +21,42 @@ header {
   border-bottom: 1px solid #C0C0C0;
   margin-bottom: 20px;
 }
+/* --- informer --- */
+.hot-t{
+    color: #EFAA31;
+  }
+.cold-t {
+  color: #50ABFF;
+}
+.curency-up,
+.curency-down {
+  position: relative;
+  padding-left: 11px;
+  padding-right: 5px;
+}
+.curency-up {
+  color: #65C852;
+}
+.curency-down {
+  color: #EF3D31;
+}
+.curency-up:before,
+.curency-down:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  border: 4px solid transparent;
+}
+.curency-up:before {
+  top: 2px;
+  border-bottom: 4px solid #65C852;
+
+}
+.curency-down:before {
+  top: 8px;
+  border-top:4px solid #EF3D31;
+}
+/* --- end of informer --- */
 .header-bottom {
   position: relative;
   overflow: hidden;
@@ -32,7 +68,7 @@ header {
 
   /* mobile
     ========================================================================== */
-  
+@media screen and (max-width: 640px){
   /* basic & system */
   .wrapper {
     padding: 0 4%;
@@ -47,39 +83,7 @@ header {
   .header-top {
     padding: 10px 0;
     font-size: 15px;
-  }
-  /* curency & temperature */
-  .temperature {
-    color: #50ABFF;
-  }
-  .curency-up,
-  .curency-down {
-    position: relative;
-    padding-left: 11px;
-    padding-right: 5px;
-  }
-  .curency-up {
-    color: #65C852;
-  }
-  .curency-down {
-    color: #EF3D31;
-  }
-  .curency-up:before,
-  .curency-down:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    border: 4px solid transparent;
-  }
-  .curency-up:before {
-    top: 2px;
-    border-bottom: 4px solid #65C852;
-
-  }
-  .curency-down:before {
-    top: 8px;
-    border-top:4px solid #EF3D31;
-  }
+  } 
   .header-bottom {
     padding-bottom: 10px;
   }
@@ -104,7 +108,7 @@ header {
   .menu-btn img {
     width: 100%;
   }
-
+}
 
   /*   ------------- I-Phone 4 ------------           */
   @media screen and (max-width: 340px) {
