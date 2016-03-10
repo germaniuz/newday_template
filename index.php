@@ -45,5 +45,6 @@
   <div class="test">
     <jdoc:include type="modules" name="test" style"xhtml" />
   </div>
+  <jdoc:include type="component" />
 </body>
 </html>
